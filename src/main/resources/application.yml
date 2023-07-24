@@ -3,9 +3,10 @@ spring:
     url: jdbc:h2:mem:credit_application_system_db
     password: 1234
     username: nessa
-  #jpa:
-   # hibernate:
-    #  ddl-auto: create-drop
+  jpa:
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
   h2:
     console:
       enabled: true
