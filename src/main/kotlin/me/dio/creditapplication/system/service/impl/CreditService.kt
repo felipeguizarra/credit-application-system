@@ -3,8 +3,9 @@ package me.dio.creditapplication.system.service.impl
 import me.dio.creditapplication.system.entity.Credit
 import me.dio.creditapplication.system.repository.CreditRepository
 import me.dio.creditapplication.system.service.ICreditService
+import org.springframework.stereotype.Service
 import java.util.*
-
+@Service
 class CreditService(
     private val creditRepository: CreditRepository,
     private val customerService: CustomerService
